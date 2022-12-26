@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/background.jpg);
+    background-color: rgb(220, 206, 191);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: rgb(220, 206, 191);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+#body {
+    margin: 5vh auto;
+    max-width: 1000px;
+}
+
+header {
+    border: 1px solid black;
+    background-color: #660066;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 5px;
+}
+
+.my-image {
+    grid-area: image;
+    margin: 1vmax;
+    max-width: 500px;
+    height: auto;
+}
+
+.my-name {
+    grid-area: name;
+    align-self: center;
+    margin: 0 1vw;
+}
+
+.about-me {
+    grid-area: about;
+    margin: 0 1vw;
+}
+
+main {
+    margin: 1vmax 0;
+    border: 1px solid black;
+    background-color: #660066;
+    border-radius: 5px;
+}
+
+main>h2 {
+    margin-left: 5vw;
+}
+
+footer {
+    border: 1px solid black;
+    background-color: #660066;
+    border-radius: 5px;
+}
+
+.my-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.project-card {
+    border: 1px solid black;
+    margin: 2vmax;
+
+    box-shadow: 10px 5px 5px rgba(220, 206, 191, 0.7);
+    border-radius: 10px;
+}
+
+.project-card>p {
+    padding: 0 1vmin;
+}
+
+.project-sc {
+    width: 100%;
+}
+
+.project-link {
+    padding-left: 1vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-link>span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    margin: 1vmin;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vmax;
+}
+
+.footer-text>p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.footer-text span {
+    margin-left: 1vmin;
+}
+
+.footer-image {
+    max-width: 500px;
+    height: auto;
+}
+
+footer>p {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+
+.links {
+    text-align: end;
+}
+
+p>a {
+    font-weight: bolder;
+}
+
+a,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width: 500px) and (max-width: 999px) {
+
+    .my-image,
+    .footer-image {
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media (max-width: 499px) {
+
+    .my-image,
+    .footer-image {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .contact-details {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    header {
+        display: grid;
+        grid-template-areas: "image name"
+            "image about";
+    }
+
+
+    a svg:hover {
+        scale: 1.5;
+    }
+
+}
