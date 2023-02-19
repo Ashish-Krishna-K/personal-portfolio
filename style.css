@@ -304,6 +304,8 @@ button.toggle-theme {
     background-color: var(--font-color-purple-dark);
     color: var(--bg-color-offwhite);
     z-index: 2;
+    height: 100vh;
+    height: 100svh;
     top: 0;
     right: 0;
     width: 50%;
