@@ -276,7 +276,6 @@ button.toggle-theme {
     background-color: var(--font-color-purple-light);
   }
 
-
   img {
     max-width: 100%;
     height: auto;
@@ -308,7 +307,6 @@ button.toggle-theme {
     top: 0;
     right: 0;
     width: 50%;
-    min-height: 100vh;
     translate: 100%;
     transition: translate var(--animation-timing);
   }
