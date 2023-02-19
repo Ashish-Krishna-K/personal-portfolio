@@ -253,6 +253,12 @@ button.toggle-theme {
   display: none;
 }
 
+.resume-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1000px) {
   .body-wrapper {
     width: 100%;
