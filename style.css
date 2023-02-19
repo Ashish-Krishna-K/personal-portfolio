@@ -270,6 +270,11 @@ button.toggle-theme {
     overflow: hidden;
   }
 
+  .body-wrapper {
+    height: 100vh;
+    height: 100svh;
+  }
+
   body.dark-theme .hamburger-menu::before,
   body.dark-theme .hamburger-menu::after,
   body.dark-theme .toggle-menu {
@@ -304,8 +309,6 @@ button.toggle-theme {
     background-color: var(--font-color-purple-dark);
     color: var(--bg-color-offwhite);
     z-index: 2;
-    height: 100vh;
-    height: 100svh;
     top: 0;
     right: 0;
     width: 50%;
