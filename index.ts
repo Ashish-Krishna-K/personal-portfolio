@@ -4,11 +4,13 @@ const toggleThemeBtn = document.querySelector('.toggle-theme');
 const darkTheme = 'dark-theme';
 const lightTheme = 'light-theme';
 
-const setThemeInLocalStorage = (theme: string) => {
+type theme = 'dark-theme' | 'light-theme';
+
+const setThemeInLocalStorage = (theme: theme) => {
   localStorage.setItem('THEME', JSON.stringify(theme));
 };
 
-const getThemeFromLocalStorage = (): string | null => {
+const getThemeFromLocalStorage = (): theme | null => {
   const themeFromStorage = localStorage.getItem('THEME');
   return !themeFromStorage ?
     themeFromStorage :
