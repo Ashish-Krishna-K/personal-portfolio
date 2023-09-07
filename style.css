@@ -1,0 +1,119 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header picture {
+  position: relative;
+}
+
+header picture span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-size: 5rem;
+  margin: 2vw;
+  text-align: left;
+}
+
+.projects-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 5vh;
+}
+
+.project-screenshot {
+  height: 150px;
+  background-color: gray;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+picture {
+  margin: 5vw;
+  text-align: center;
+}
+
+svg {
+  width: 5vw;
+  margin: 0 1.5vw;
+}
+
+
+#projects {
+  margin: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media (max-width: 500px) {
+
+  img {
+    width: 90vw;
+    height: auto;
+  }
+
+  #hero {
+    margin: 5vw;
+    text-align: center;
+  }
+
+  .project-description {
+    margin: 5vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr;
+    align-items: center;
+  }
+
+  .links {
+    justify-self: flex-end;
+  }
+
+  .project-description p {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  #contact {
+    margin: 5vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact h2 {
+    align-self: center;
+  }
+
+  .phone-number,
+  .email {
+    margin: 0.2vh 0;
+  }
+
+  .address {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #contact .links {
+    margin-top: 1.5vh;
+    align-self: center;
+  }
+
+  footer picture {
+    margin: 0;
+    width: 100%;
+  }
+
+  footer picture img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
